@@ -2,10 +2,7 @@
 
 namespace app\controllers;
 
-use yii\web\Controller;
-
-
-class MyController extends Controller
+class MyController extends AppController
 {
 
 	public function actionIndex($id = null){
@@ -21,6 +18,10 @@ class MyController extends Controller
 			'names' => $names,
 			'id' => $id,
 		]);
+	}
+
+	public function actionBlogPost() {
+		return 'fdsfsdfdfs';
 	}
 
 }
